@@ -1,0 +1,174 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 1024px;
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+.card {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 300% 300%;
+  animation: gradient 10s infinite;
+  border-radius: 20px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  width: 800px;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.card-nome {
+  display: flex;
+  margin-top: 20px;
+  height: 60%;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  width: 80%;
+}
+
+ul {
+  height: 80%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+li {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  justify-content: center;
+  list-style-type: none;
+}
+iconify-icon {
+  margin-right: 20px;
+}
+a:hover {
+  transition: 0.3s;
+  color: rgb(228, 223, 223);
+}
+h1,
+h4,
+li,
+ul,
+a {
+  color: rgb(245, 239, 239);
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+}
+h4 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.bubble:nth-child(1) {
+  animation-delay: 10s;
+  animation: gradient 5s,primeiro 11s ease-in-out infinite alternate;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+ background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+.bubble:nth-child(2) {
+  animation-delay: 3s;
+  animation:  segundo 11s ease-in-out infinite alternate;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+.bubble:nth-child(3) {
+  animation:terceiro 11s ease-in-out infinite alternate-reverse;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: start;
+}
+.title {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes primeiro {
+  0% {
+    transform: translate(20px, -70px);
+  }
+50%{
+  transform: translate(-20px, 50px)scale(0.8);
+}
+  100% {
+    transform: translate(150px, 130px) scale(1.8);
+    
+  }
+}
+@keyframes segundo {
+  0% {
+    transform: translate(10px, 0);
+  }
+  50% {
+    transform: translate(50px, 50px) scale(1.4);
+  }
+  100% {
+    transform: translate(-10px, 100px) scale(0.8);
+  }
+}
+@keyframes terceiro {
+  0% {
+    transform: translate(-100px, -100px);
+  }
+
+  50% {
+    transform: translate(0px, 100px) scale(1.2);
+   
+  }
+  100% {
+    transform: translate(-50px, 100px) scale(0.8);;
+    
+  }
+}
+
